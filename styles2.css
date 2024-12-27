@@ -1,0 +1,79 @@
+/* Basic styling for the navbar */
+
+:root {
+    --background-color: #f0f0f0; /* Replace with your desired color */
+    --bg2-color: rgb(23,23,23);
+    --bg-color:rgb(13,17,23);
+    --font-color:White;
+    --bottom:2px solid black;
+    --searchbg-color:rgba(255,255,255,0.04);
+    --button-color:rgb(0,120,212);
+    } 
+
+
+
+.custom-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    padding: 10px 0;
+}
+
+.nav-item {
+    margin: 0 20px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Default bottom border - hidden */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect - underline expansion */
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* Active state styling */
+.nav-item.active::after {
+    width: 100%;
+    background-color: var(--active-color);
+}
+
+/* Specific active border colors */
+#opt1.active::after {
+    background-color: #FF5733; /* Option 1 color */
+}
+
+#opt2.active::after {
+    background-color: #33FF57; /* Option 2 color */
+}
+
+#opt3.active::after {
+    background-color: #3357FF; /* Option 3 color */
+}
+
+/* Hover color change for each option */
+#opt1:hover::after {
+    background-color: #FF5733;
+}
+
+#opt2:hover::after {
+    background-color: #33FF57;
+}
+
+#opt3:hover::after {
+    background-color: #3357FF;
+}

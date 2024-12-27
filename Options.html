@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    
+    <nav>
+        <ul class="navbar">
+          <li id="opt1" class="nav-item" onclick="setActive(this)">Option 1</li>
+          <li id="opt2" class="nav-item" onclick="setActive(this)">Option 2</li>
+          <li id="opt3" class="nav-item" onclick="setActive(this)">Option 3</li>
+        </ul>
+    </nav>
+    <script src="script.js">
+
+     // Function to handle the active class toggle
+          function setActive(element) {
+    // Get all nav items
+    const navItems = document.querySelectorAll('.nav-item');
+    
+    // Remove the active class from all items
+    navItems.forEach(item => item.classList.remove('active'));
+
+    // Add the active class to the clicked item
+    element.classList.add('active');
+}
+ 
+
+    </script>
+</body>
+</html>
+
+      
+</body>
+</html>
+</body>
+</html>

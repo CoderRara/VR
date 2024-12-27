@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+    :root {
+     --background-color: #f0f0f0; /* Replace with your desired color */
+     --bg2-color: rgb(23,23,23);
+     --bg-color:rgb(13,17,23);
+     --font-color:White;
+     --bottom:2px solid black;
+     --searchbg-color:rgba(255,255,255,0.04);
+     --button-color:rgb(0,120,212);
+     } 
+
+
+    </style>
+</head>
+<body>
+  <section>
+<div class="container" id="nav-container">
+    <div class="navbar">
+        <div class="logo">
+                <a href="#">
+                    <img src="vr-letters-logo-design-slim-creative-simple-black-letter-concept-vector_enhanced-removebg-preview.png" alt="Logo">
+                </a>
+        </div>
+        <div class="nav-right">
+                <div class="search-bar">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search or type a command (Ctrl + G)">
+                </div>
+                <div class="nav-icons">
+                    <a href="#" class="notification">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <a href="#" class="help">
+                        Help <i class="fas fa-angle-down"></i>
+                    </a>
+                    <a href="#" class="profile">
+                        <i class="fas fa-circle"></i>
+                    </a>
+                </div>
+        </div>
+    </div>
+</div>
+    <div class="WelHead">
+        <h1 id="head1">WelCome!</h1>
+    </div>
+    <div class="custom-navbar" id="custom-navbar">
+        <span id="opt1" class="nav-item" onclick="setActive(this)">Turbo C++</span>
+        <span id="opt2" class="nav-item" onclick="setActive(this)">Html</span>
+        <span id="opt3" class="nav-item" onclick="setActive(this)">Visual Basic</span>
+    </div>
+    
+    <div class="Main-content">
+        <div class="Main-heading">
+        <div class="heading">
+                <h1 id="head">Customize Your Coding Experience</h1>
+                <p id="Hp">Lorem ipsum dolor sit, amet consectetur adipisicing elit </p>
+         </div>
+        <div class="LearnMore">
+                <a href="#Dev1" id="learn">Get Started</a>
+         </div>
+        </div>
+        <div class="Main-img">
+            <img src="/laptop-coding-terminal.jpg" alt="Lappy" class="glowing-image"></img>
+        </div>
+    </div>
+  </section>
+<section id="Dev1">
+    <div class="DevMain">
+       <div id="DevHeading">
+         <h2 id="Devh2">Select Your <font>Conveneint</font> Device</h2>
+       </div>
+       <div id="DevSel">
+        <a href="/Dev2" id="DevA1" class="A1hov">Android</a>
+        <a href="/PC.html" id="DevA2" class="A1hov" class="download-link">PC</a>
+     </div>
+    </div>
+</section>
+<section id="Dev2">
+    <div class="V-holder">
+        <div class="v-img"><img src="/Ps Mobile.png" alt="Mobile"></div>
+        <div class="v-text">
+            <div class="v-head">
+                <h1>C++ For Mobile</h1>
+                <p>The <font style="color: var(--button-color)">C++</font>Compiler For Mobile</p>
+            </div>
+            <div class="v-Down">
+                <a href="#" class="download-link"><img src="/Play_Store-removebg-preview_enhanced.png" alt="Play Store"></a>
+                <a href="#" class="download-link"><img src="/App-removebg-preview.png" alt="Apple Store"></a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <p>A Smart, Good And :) Student</p>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="/#">About</a></li>
+          <li><a href="/#">Services</a></li>
+          <li><a href="/#">Contact</a></li>
+          <li><a href="/#">Privacy Policy</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+    </div>
+</div>
+<p>&copy; 2024 VR. All rights reserved.</p>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
