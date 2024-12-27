@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,16 +52,17 @@
                         <i class="fas fa-circle"></i>
                     </a>
                 </div>
+                
         </div>
     </div>
 </div>
     <div class="WelHead">
-        <h1 id="head1">WelCome!</h1>
+        <h1 id="head1">Welcome!</h1>
     </div>
     <div class="custom-navbar" id="custom-navbar">
-        <span id="opt1" class="nav-item" onclick="setActive(this)">Turbo C++</span>
-        <span id="opt2" class="nav-item" onclick="setActive(this)">Html</span>
-        <span id="opt3" class="nav-item" onclick="setActive(this)">Visual Basic</span>
+        <span id="opt1" class="nav-item" onclick="setActive(this, 'turbo')">Turbo C++</span>
+        <span id="opt2" class="nav-item" onclick="setActive(this, 'html')">Html</span>
+        <span id="opt3" class="nav-item" onclick="setActive(this, 'vb')">Visual Basic</span>
     </div>
     
     <div class="Main-content">
@@ -86,7 +86,7 @@
          <h2 id="Devh2">Select Your <font>Conveneint</font> Device</h2>
        </div>
        <div id="DevSel">
-        <a href="/Dev2" id="DevA1" class="A1hov">Android</a>
+        <a href="#Dev2" id="DevA1" class="A1hov">Android</a>
         <a href="/PC.html" id="DevA2" class="A1hov" class="download-link">PC</a>
      </div>
     </div>
@@ -96,12 +96,12 @@
         <div class="v-img"><img src="/Ps Mobile.png" alt="Mobile"></div>
         <div class="v-text">
             <div class="v-head">
-                <h1>C++ For Mobile</h1>
+                <h1 id="dynamic-heading">Best Tubro C++ App For Mobile</h1>
                 <p>The <font style="color: var(--button-color)">C++</font>Compiler For Mobile</p>
             </div>
             <div class="v-Down">
-                <a href="#" class="download-link"><img src="/Play_Store-removebg-preview_enhanced.png" alt="Play Store"></a>
-                <a href="#" class="download-link"><img src="/App-removebg-preview.png" alt="Apple Store"></a>
+                <a href="#" id="downloadLink1" class="download-link"><img src="/Play_Store-removebg-preview_enhanced.png" alt="Play Store"></a>
+                <a href="#" id="downloadLink2"  class="download-link"><img src="/App-removebg-preview.png" alt="Apple Store"></a>
             </div>
         </div>
         
