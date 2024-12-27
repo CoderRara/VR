@@ -1,11 +1,13 @@
+/* Root Variables */
 :root {
-  --background-color: #f0f0f0; /* Replace with your desired color */
-  --bg2-color: rgb(23,23,23);
-  --bg-color:rgb(13,17,23);
-  --font-color:White;
-  --bottom:2px solid black;
-  --searchbg-color:rgba(255,255,255,0.04);
-  --button-color:rgb(0,120,212);
+  --background-color: #f0f0f0;
+  --bg2-color: rgb(23, 23, 23);
+  --bg-color: rgb(13, 17, 23);
+  --font-color: white;
+  --bottom: 2px solid black;
+  --searchbg-color: rgba(255, 255, 255, 0.04);
+  --button-color: rgb(0, 120, 212);
+  --active-color: #FF5733; /* New active color variable for dynamic color handling */
 }
 
 html {
@@ -18,18 +20,19 @@ html {
   box-sizing: border-box;
 }
 
+/* General Body Styles */
 body {
   background-color: var(--bg-color);
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: 'Inter', 'Poppins', sans-serif;
 }
 
+/* Navbar and Container */
 .container {
   width: 100%;
   height: 62px;
   border: 1px solid var(--bg-color);
   border-bottom: 1px solid var(--searchbg-color);
 }
-
 
 .navbar, .main-container {
   width: calc(100% - 315px);
@@ -64,12 +67,17 @@ body {
   background-color: var(--searchbg-color);
   padding: 8px 12px;
   border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.search-bar:hover {
+  box-shadow: 0 0 15px 5px var(--button-color);
 }
 
 .search-bar input {
   background-color: transparent;
   border: none;
-  color:  var(--font-color);
+  color: var(--font-color);
   margin-left: 8px;
   outline: none;
   font-size: 14px;
@@ -92,7 +100,7 @@ body {
   font-size: 16px;
 }
 
-.nav-icons .notification i, 
+.nav-icons .notification i,
 .nav-icons .help i,
 .nav-icons .profile i {
   font-size: 16px;
@@ -101,7 +109,7 @@ body {
 .WelHead {
   width: 100%;
   height: 80px;
-  background-color:var(--bg-color);
+  background-color: var(--bg-color);
   align-items: center;
   display: flex;
   font-size: 28px;
@@ -118,7 +126,8 @@ body {
   height: 18px;
 }
 
-.Main-content{
+/* Main Content Styles */
+.Main-content {
   width: 100%;
   height: 580px;
   display: flex;
@@ -130,9 +139,8 @@ body {
   margin-top: 90px;
 }
 
-
 .heading {
-  margin:0 0 100px 172px ;
+  margin: 0 0 100px 172px;
 }
 
 #head1 {
@@ -143,7 +151,7 @@ body {
 #head {
   font-weight: 900;
   font-size: 40px;
-  margin: 5px 0 5px 0;
+  margin: 5px 0;
   color: var(--font-color);
 }
 
@@ -176,8 +184,6 @@ body {
   color: #f0f0f0;
 }
 
-/* Main-img holder */
-
 .Main-img {
   width: 65%;
   height: 490px;
@@ -189,14 +195,15 @@ body {
   margin-top: 20px;
   width: 500px;
   height: 270px;
-  transition: 0.3s;
+  transition: box-shadow 0.3s ease;
 }
 
 .glowing-image:hover {
-  border: 5px solid var(--button-color);
+  box-shadow: 0 0 20px 5px var(--button-color); /* Glow effect */
 }
 
 
+/* Device Selection Section */
 .DevMain {
   height: 350px;
   width: 100%;
@@ -219,7 +226,7 @@ body {
 }
 
 font {
-  color:var(--button-color)
+  color: var(--button-color);
 }
 
 #DevSel {
@@ -230,7 +237,8 @@ font {
   justify-content: center;
 }
 
-#DevA1 {
+#DevA1,
+#DevA2 {
   text-decoration: none;
   font-size: 35px;
   color: var(--font-color);
@@ -246,35 +254,25 @@ font {
   transition: 0.3s;
 }
 
-#DevA1:hover , #DevA2:hover {
+#DevA1:hover,
+#DevA2:hover {
   background-color: var(--bg-color);
   color: var(--font-color);
 }
 
 #DevA2 {
-  text-decoration: none;
-  font-size: 35px;
-  color: var(--font-color);
-  background-color: var(--button-color);
-  border-radius: 10px;
-  border: 3px solid var(--button-color);
   margin-left: 10px;
-  width: 200px;
-  align-self: center;
-  margin-right: 50px;
-  text-align: center;
-  padding: 10px 0;
-  transition: 0.3s;
-} 
+}
 
+/* Visual Section */
 .V-holder {
   width: 100%;
   height: 700px;
-  background-color:var(--bg-color);
+  background-color: var(--bg-color);
   display: flex;
 }
 
-.v-img  {
+.v-img {
   width: 50%;
   height: 90%;
   margin: 50px 0 0 50px;
@@ -287,7 +285,7 @@ font {
 
 .v-text {
   margin-top: 50px;
-  width: 38%;
+  width: 40%;
 }
 
 .v-head {
@@ -304,7 +302,7 @@ font {
 }
 
 .v-head p {
-  margin-top: 10px;
+  margin-top: 18px;
   color: var(--font-color);
   font-size: 18px;
   text-align: center;
@@ -323,9 +321,10 @@ font {
   margin: 10px;
 }
 
+/* Footer Styling */
 footer {
-  background-color: #000; /* Black background */
-  color: var(--font-color); /* White text */
+  background-color: #000;
+  color: var(--font-color);
   padding: 40px 0;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -346,7 +345,7 @@ footer {
 }
 
 .footer-section h4 {
-  color: var(--button-color); /* Bright Blue accent */
+  color: var(--button-color);
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
@@ -368,20 +367,118 @@ footer {
 }
 
 .footer-section a {
-  color: #ffff; /* Bright Blue accent */
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-  color:darkorchid; /* Subtle green for hover */
+  color: darkorchid;
   text-decoration: underline;
 }
 
 footer p {
   margin-top: 30px;
   font-size: 13px;
-  color: #ccc; /* Light gray for less emphasis */
+  color: #ccc;
 }
 
+/* Custom Navbar Styles */
+.custom-navbar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+  padding: 10px 0;
+}
+
+.nav-item {
+  margin: 0 20px;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Default bottom border - hidden */
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect - underline expansion */
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Active state styling */
+.nav-item.active::after {
+  width: 100%;
+  background-color: var(--active-color);
+}
+
+/* Specific active border colors */
+#opt1.active::after {
+  background-color: rgb(0, 120, 212); /* Option 1 color */
+}
+
+#opt2.active::after {
+  background-color: rgba(255, 0, 0,0.7); /* Option 2 color */
+}
+
+#opt3.active::after {
+  background-color: rgb(0, 180, 120); /* Option 3 color */
+}
+
+/* Hover color change for each option */
+#opt1:hover::after {
+  background-color: rgb(0, 120, 212);
+}
+
+#opt2:hover::after {
+  background-color: rgba(255, 0, 0,0.7);
+}
+
+#opt3:hover::after {
+  background-color: rgb(0, 180, 120);
+}
+
+#learn,#DevA1,#DevA2{
+  transition: box-shadow 0.3s ease; /* Smooth transition for the glow effect */
+  text-decoration: none; /* Optionally remove underline */
+}
+
+#learn:hover{
+  box-shadow: 0 0 15px 5px var(--button-color); /* Glow effect */
+  color: var(--font-color); /* Optional: Change text color on hover */
+}
+
+#DevA1:hover , #DevA2:hover {
+  box-shadow: 0 0 15px 5px var(--button-color);
+  background-color: var(--bg-color);
+  color: var(--button-color);
+}
+
+#opt1,#opt2,#opt3 {
+  transition: 0.3 ease;
+}
+
+#opt1:hover {
+  color: rgb(0, 120, 212);
+}
+
+#opt2:hover {
+  color:rgba(255, 0, 0, 0.7) ;
+}
+
+#opt3:hover {
+  color: rgb(0, 180, 120);
+}
